@@ -1,4 +1,4 @@
-const key = '';
+const key = 'aemorozov1';
 const url = 'https://bzden-server.vercel.app/api/keys';
 
 fetch(url, {
@@ -11,4 +11,4 @@ fetch(url, {
     .then(isKeyValid => {
         console.log(isKeyValid);
     })
-    .catch(error => console.error('Error:', error));
+    .catch(error => { error });
