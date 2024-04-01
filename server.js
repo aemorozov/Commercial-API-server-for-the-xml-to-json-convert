@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 app.get('/api/keys', (req, res) => {
     const authHeader = req.headers['authorization'];
     if (!authHeader) {
-        return res.status(401).json({ error: 'Unauthorized' });
+        return res.status(401).json({ error: `This is privet party, go out` });
     }
     const key = authHeader;
     const isKeyValid = Object.values(keys).includes(`${key}`);
