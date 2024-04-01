@@ -1,8 +1,17 @@
-const key = 'aemorozov'
+// document.addEventListener('DOMContentLoaded', function () {
+const key = 'den';
+const url = 'https://bzden-server.vercel.app/api/keys';
 
-const url = `https://bzden-server-4xdsz9u8a-aemorozov.vercel.app:3000/api/keys?key=${encodeURIComponent(key)}`
-
-fetch(url)
+fetch(url, {
+    method: 'GET',
+    headers: {
+        'Authorization': key
+    }
+})
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+        console.log(data);
+        // здесь вы можете обработать полученные данные
+    })
     .catch(error => console.error('Error:', error));
+// });

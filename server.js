@@ -14,7 +14,7 @@ app.get('/api/keys', (req, res) => {
     if (!authHeader) {
         return res.status(401).json({ error: 'Unauthorized' });
     }
-    const key = authHeader.split(' ')[1];
+    const key = authHeader;
     const isKeyValid = keys.includes(key);
     res.json({ isValid: isKeyValid });
 });
