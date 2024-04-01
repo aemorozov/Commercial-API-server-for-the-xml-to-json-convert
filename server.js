@@ -16,7 +16,7 @@ app.get('/api/keys', (req, res) => {
     }
     const key = authHeader;
     const isKeyValid = Object.values(keys).includes(`${key}`);
-    res.json({ isValid: isKeyValid });
+    console.log(isKeyValid);
 });
 
 module.exports = app;
