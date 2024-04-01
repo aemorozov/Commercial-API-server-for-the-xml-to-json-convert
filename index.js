@@ -1,4 +1,4 @@
-const key = 'den';
+const key = 'aemorozov';
 const url = 'https://bzden-server.vercel.app/api/keys';
 
 fetch(url, {
