@@ -1,6 +1,6 @@
 const key = 'aemorozov'
 
-const url = `http://localhost:3000/api/keys?key=${encodeURIComponent(key)}`
+const url = `https://bzden-server-4xdsz9u8a-aemorozov.vercel.app:3000/api/keys?key=${encodeURIComponent(key)}`
 
 fetch(url)
     .then(response => response.json())
