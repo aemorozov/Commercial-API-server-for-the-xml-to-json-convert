@@ -1,5 +1,5 @@
 const apiKeys = {
-    demo: 'w&a$-t8W0-T0Sv-3LL$',
+    demo: 'yK0#-ZeBk-u75L-j@lM',
 }
 
 module.exports = apiKeys
