@@ -1,7 +1,7 @@
 {
-  "name": "bzdenserver",
+  "name": "demo-server",
   "version": "1.0.0",
-  "description": "BZDEN Server for keys",
+  "description": "Server for the keys",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
